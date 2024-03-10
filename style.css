@@ -1,0 +1,591 @@
+*{
+    font-family: Poppins-Regular;
+}
+@font-face {
+    font-family: BebasNeue-Regular;
+    src: url(assets/font/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(assets/font/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins-ExtraBold;
+    src: url(assets/font/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Poppins-SemiBold;
+    src: url(assets/font/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+    font-family: Poppins-ExtraLight;
+    src: url(assets/font/Poppins/Poppins-ExtraLight.ttf);
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #121212;
+    --secondary-color: #FFFFFF;
+    --para-color: #FDFAFE;
+    --Orange-color: #FF0000;
+    --black-color: #1F1F1F;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+.padding{
+    padding: 10px 20px !important;
+}
+body{
+    background-color: var(--primary-color);
+}
+/* Section Header Start */
+.header{
+    background-color: var(--secondary-color);
+}
+.header .logo-wrapper img{
+    width: 90px;
+    height: 60px;
+    object-fit: contain;
+}
+.navbar-text ul li a{
+    color: var(--black-color);
+    font-family: Poppins-SemiBold;
+}
+.navbar-text ul :last-child .nav-link{
+    border: 1px solid var(--Orange-color);
+    padding: 10px 40px;
+    border-radius: 20px;
+}
+
+/* Section Header End */
+
+/* Section Banner Start */
+.banner .main-banner-box{
+    background-image: url(assets/images/Image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-banner-box .large-heading{
+    text-align: right;
+    padding: 20px 50px;
+}
+.banner .text-area{
+    width: 60%;
+}
+.main-banner-box .large-heading h1{
+    color: transparent;
+    font-size: 150px;
+    font-family: Poppins-ExtraBold;
+    letter-spacing: 20px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: #FFFFFF;
+}
+.main-banner-box .second-large-heading{
+    width: 90%;
+}
+.second-large-heading h3{
+    font-size: 70px;
+    color: var(--secondary-color);
+    font-family: BebasNeue-Regular;
+    line-height: 75px;
+    letter-spacing: 2px;
+}
+.second-large-heading h3 span{
+    color: var(--Orange-color);
+    font-family: BebasNeue-Regular;
+}
+.banner .text-area .para-wrapper{
+    width: 75%;
+}
+.banner .text-area .para-wrapper p{
+    color: var(--para-color);
+    font-size: 14px;
+    font-family: Poppins-ExtraLight;
+}
+.btn-wrapper{
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.btn-wrapper a{
+    border: 1px solid var(--Orange-color);
+    padding: 5px 30px;
+    border-radius: 15px;
+}
+.btn-wrapper a:hover>span{
+    color: var(--para-color);
+    transition: .3s;
+}
+.btn-wrapper a span{
+    font-size: 35px;
+    font-family: BebasNeue-Regular;
+    color: var(--Orange-color);
+    letter-spacing: 3px;
+    transition: .3s;
+}
+.text-area .counter-box-wrapper{
+    width: 80%;
+    display: flex;
+    margin-top: 50px;
+}
+.counter-box-wrapper .box{
+    width: 33%;
+    border-right:1px solid var(--secondary-color) ;
+    text-align: center;
+}
+.counter-box-wrapper .box h2{
+    color: var(--Orange-color);
+    text-align: center;
+    font-family: BebasNeue-Regular;
+    font-size: 50px;
+}
+.counter-box-wrapper .box span{
+    color: var(--secondary-color);
+    font-size: 14px;
+    font-family: Poppins-ExtraLight;
+}
+/* Section Banner End */
+
+/* Section Main Heading Start */
+.content-main-heading .heading{
+    width: 100%;
+    text-align: center;
+}
+.content-main-heading .heading h1, .content-main-heading .heading h1 span{
+    font-family: BebasNeue-Regular;
+    font-size: 80px;
+    color: var(--secondary-color);
+}
+.content-main-heading .heading h1 span{
+    color: var(--Orange-color);
+}
+.content-main-heading .second h1, .content-main-heading .second h1 span{
+    line-height: 70px;
+    font-size: 70px;
+}
+.content-main-heading .para{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+}
+.content-main-heading .para p{
+    color: var(--para-color);
+    font-size: 14px;
+    font-family: Poppins-ExtraLight;
+}
+/* Section Main Heading End  */
+
+/* Section box start  */
+
+.boxes .box{
+    width: 90%;
+    border: 1px solid var(--Orange-color);
+}
+.box .number-wrapper h3, .box .small-heading h4{
+    color: var(--secondary-color);
+    font-family: BebasNeue-Regular;
+    font-size: 35px;
+}
+.box .small-heading h4{
+    color: var(--Orange-color);
+}
+.box .para p{
+    font-size: 12px;
+    color: var(--para-color);
+    font-family: Poppins-ExtraLight;
+}
+
+/* Section box End  */
+
+/* Section Newsletter Start  */
+.newsletter .image-wrapper img{
+    height: 600px;
+    object-fit: contain;
+}
+.newsletter .point-wrapper ul{
+    margin-left: 50px;
+}
+.newsletter .point-wrapper ul li{
+    padding: 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    color: var(--para-color);
+}
+.newsletter .point-wrapper ul li::before{
+    content: url('assets/images/Ellipse.png');
+    background-size: contain;
+    margin-right: 20px;
+}
+.newsletter .textarea .btn-wrapper a{
+    margin-left: 100px;
+}
+/* Section Newsletter End  */
+
+/* Section Card Heading Start  */
+
+.content-main-heading .for-card{
+    margin-left: 130px;
+}
+.content-main-heading .abc{
+    margin-left: 350px;
+}
+/* Section Card Heading End  */
+
+/* Section Card Start  */
+.card-wrapper .card{
+    width: 85%;
+    height: 450px;
+    margin: auto;
+    background: none;
+    background-image: url('assets/images/card1.png');
+    background-size: 100% 97%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+}
+.card-wrapper .card2{
+    background-image: url('assets/images/card2.png');
+}
+.card-wrapper .card3{
+    background-image: url('assets/images/card3.png');
+    background-size: 99% 97%;
+}
+.card .card-content{
+    width: 100%;
+    background-color: #191919;
+    position: absolute;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    bottom: 0;
+    padding: 10px 10px;
+}
+.card-content .card-heading h3{
+    color: var(--secondary-color);
+    font-family: BebasNeue-Regular;
+    font-size: 35px; 
+    letter-spacing: 1px;  
+}
+.card-content .card-discription{
+    width: 80%;
+}
+.card-content .card-discription p{
+    font-size: 13px;
+    color: var(--para-color);
+    font-family: Poppins-ExtraLight;
+}
+.card-content .card-button{
+    width: 95%;
+    background-color: var(--Orange-color);
+    border-radius: 12px;
+    padding: 10px;
+    margin: auto;
+}
+.card-content .card-button{
+    padding: 10px;    
+}
+.card-content .card-button span{
+    color: var(--secondary-color);
+    text-align: left;
+}
+/* Section Card End  */
+
+/* Section Second Card Start  */
+
+.card-wrapper .second-card{
+    width: 90%;
+    background-image: url('assets/images/second-card1.png');
+    height: 450px;
+    overflow: hidden;
+    border-radius: 0px;
+    border: 1px solid var(--Orange-color);
+}
+.card-wrapper .second-card2{
+    background-image: url('assets/images/second-card2.png');
+}
+.card-wrapper .second-card3{
+    background-image: url('assets/images/second-card3.png');
+}
+.card-wrapper .second-card-content{
+    width: 100%;
+    background-color: #000000a9;
+    backdrop-filter: blur(1px);
+    position: absolute;
+    bottom: -100px;
+    transition: .5s ease-in-out;
+    visibility: hidden;
+}
+.card-wrapper .second-card:hover>.second-card-content{
+    bottom: 0;
+    transition: .5s ease-in-out;
+    transform: translateY(0px);
+    visibility: visible;
+}
+.second-card-content .second-card-heading{
+    width: 100%;
+    text-align: center;
+}
+.second-card-content .second-card-description{
+    width: 100%;
+    text-align: center;
+}
+.second-card-content .second-card-description img{
+    height: 20px;
+    width: 30%;
+    object-fit: contain;
+    margin-top: -30px;
+}
+
+/* Section Second Card End  */
+
+
+/* Section journey Start  */
+.journey{
+    background-color: #090707;
+    padding: 50px;
+}
+.journey .heading h1, .journey .heading span{
+    font-family: BebasNeue-Regular;
+    font-size: 65px; 
+    color: var(--secondary-color);
+}
+.journey .heading span{
+    color: var(--Orange-color);
+}
+.journey .journey-card-wrapper{
+    width: 80%;
+    border-left: 0.5px solid var(--Orange-color);
+    border-right: 0.5px solid var(--Orange-color);
+    border-bottom: 5px solid var(--Orange-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #0D0D0D;
+    margin: 50px auto;
+}
+.journey-card-wrapper .top-heading{
+    width: 100%;
+    margin: 10px 0px;
+}
+.journey-card-wrapper .top-heading h3{
+    color: var(--Orange-color);
+    font-family: BebasNeue-Regular;
+    font-size: 35px; 
+}
+.journey-card-wrapper .second-top-heading{
+    width: 100%;
+    margin-top: 20px;
+}
+.journey-card-wrapper .second-top-heading h2{
+    color: var(--secondary-color);
+    font-size: 50px;
+}
+.journey-card-wrapper .third-top-heading{
+    width: 100%;
+    margin-top: 20px;
+}
+.journey-card-wrapper .third-top-heading h5{
+    color: var(--para-color);
+    font-size: 18px;
+    font-family: Poppins-ExtraLight;
+}
+.journey-card-wrapper .journey-point-wrapper ul{
+    margin-left: -30px;
+}
+.journey-card-wrapper .journey-point-wrapper ul li{
+    margin-top: 5px;
+    font-size: 13px;
+    color: var(--para-color);
+}
+.journey-card-wrapper .journey-point-wrapper ul li::before{
+    content: url('assets/images/Check-List.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.journey-card-wrapper .journey-btn-wrapper{
+    width: 95%;
+    margin: 20px 0px;
+    padding: 10px 60px;
+    background-color: var(--Orange-color);
+    border-radius: 20px;
+    
+}
+.journey-card-wrapper .journey-btn-wrapper a{
+    color: var(--secondary-color);
+}
+
+
+.journey .second-journey{
+    background-color: var(--Orange-color);
+    border-left: 0.5px solid #090707;
+    border-right: 0.5px solid #090707;
+    border-bottom: 5px solid #090707;
+}
+.journey .second-journey .top-heading{
+    margin: 20px 0px;
+}
+.journey .second-journey .top-heading h3{
+    color: var(--secondary-color);
+}
+.journey .second-journey .journey-point-wrapper ul li{
+    color: var(--para-color);
+    font-size: 13px;
+}
+.journey .second-journey .journey-btn-wrapper{
+    background-color: #090707;
+}
+
+/* Section journey End  */
+
+
+
+/* Section Contact us Start  */
+.contact-us{
+    background-image: url('assets/images/contact-bg.png');
+    background-size: 90% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 50px auto;
+    display: flex;
+}
+.contact-us .img-wrapper{
+    width: 97%;
+    height: 100%;
+    margin-top: -10px;
+}
+.contact-us .img-wrapper img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.contact-us .left-side-content .heading{
+    width: 100%;
+    text-align: center;
+}
+.contact-us .left-side-content .heading h1, .contact-us .left-side-content .heading h1 span{
+    font-family: BebasNeue-Regular;
+    font-size: 90px; 
+    color: var(--secondary-color);
+}
+.contact-us .left-side-content .heading h1 span{
+    color: var(--Orange-color);
+}
+.contact-us .left-side-content .paragraph{
+    width: 80%;
+    margin: auto;
+}
+.contact-us .left-side-content .paragraph p{
+    font-family: Poppins-ExtraLight;
+    font-size: 13px;
+    color: var(--para-color);
+}
+.contact-us .left-side-content .contact-form{
+    width: 100%;
+}
+.left-side-content .contact-form tr td input{
+    margin: 10px 0px 5px 20px;
+    width: 90%;
+    border: 2px solid var(--secondary-color);
+    outline: none;
+    padding: 10px 15px;
+    background: none;
+    color: var(--para-color);
+    font-size: 18px;
+    font-family: Poppins-Regular;
+
+}
+.left-side-content .contact-form tr td input[type="email"]{
+    width: 95%;
+}
+/* Section Contact us End  */
+
+
+/* Section Footer Start  */
+.sub-footer{
+    background-color: #090707;
+}
+.sub-footer .text-wrapper, .sub-footer .second-text-wrapper{
+    width: 100%;
+    padding: 10px;
+}
+.sub-footer .text-wrapper p, .sub-footer .second-text-wrapper p{
+    color: var(--para-color);
+    font-size: 15px
+}
+.sub-footer .links ul li{
+    margin-bottom: 10px;
+}
+.sub-footer .links ul li a{
+    color: var(--para-color);
+}
+.sub-footer .links ul:first-child{
+    color: var(--Orange-color);
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+form input{
+    padding: 0px 10px;
+}
+.sub-footer .lable h4{
+    color: var(--secondary-color);
+    font-size: 20px;
+}
+.sub-footer form .button a{
+    padding: 5px;
+    border: 1px solid var(--Orange-color);
+    background-color: var(--Orange-color);
+    color: var(--para-color);
+    border-radius: 10px;
+}
+.sub-footer .social-links{
+    margin-top: 20px;
+    padding: 10px 0px;
+}
+.sub-footer .social-links i{
+    font-size: 25px;
+    margin: 10px 0px 0px  10px;
+    color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--Orange-color);
+}
+/* Section Footer End  */
+.footer{
+    background-color: #090707;
+}
+.footer .first-col{
+    border-top: 1px solid white;
+}
+.footer .text h6{
+    color: var(--para-color);
+}
+.footer .text a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.footer .text a i{
+    font-size: 25px;
+    margin: 10px 0px 0px  10px;
+    color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 100%;
+    background-color: var(--Orange-color);
+}
+.footer .text a span{
+    color: var(--para-color);
+}
+
+
+
